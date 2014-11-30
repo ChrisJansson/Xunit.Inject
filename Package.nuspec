@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Xunit.Inject</id>
+    <version>0.1</version>
+    <authors>Chris Jansson</authors>
+    <owners>Chris Jansson</owners>
+    <licenseUrl>https://github.com/ChrisJansson/Xunit.Inject/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/ChrisJansson/Xunit.Inject</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Dependency injection in xunit test fixtures.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>xunit dependency injection</tags>
+    <dependencies>
+      <dependency id="xunit" version="1.9.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Xunit.Inject\InjectedTestClassCommand.cs" target="content\Xunit.Inject" />
+    <file src="Xunit.Inject\InjectedTestCommand.cs" target="content\Xunit.Inject" />
+    <file src="Xunit.Inject\ITestFixtureFactory.cs" target="content\Xunit.Inject" />
+    <file src="Xunit.Inject\ITestFixtureScope.cs" target="content\Xunit.Inject" />
+    <file src="Xunit.Inject\TestFixtureFactory.cs" target="content\Xunit.Inject" />
+  </files>
+</package>
