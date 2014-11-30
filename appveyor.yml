@@ -1,5 +1,6 @@
 before_build:
   nuget restore
 
-build:
-  publish_nuget: true 
+after_test:
+  - cmd: nuget pack Package.nuspec
+  - ps: Get-ChildItem .\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
